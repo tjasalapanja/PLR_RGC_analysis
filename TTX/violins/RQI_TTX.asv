@@ -1,0 +1,10 @@
+[~,ipsiPre,RQIPre]=findIpsiZscore(allDataPre,3,0.3);
+[~,ipsiPost,RQIPost]=findIpsiZscore(allDataPost,3,0.3);
+[contraPre]=findRQI(allDataPre,2)
+[contraPost]=findRQI(allDataPost,2)
+rqis.a=RQIPre;
+rqis.b=RQIPost;
+rqis.c=contraPre;
+rqis.c=contraPost;
+figure();
+violinplot(rqis)

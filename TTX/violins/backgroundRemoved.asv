@@ -1,0 +1,19 @@
+cmap=[0,205,108]./255;
+cmapLight=0.5+(cmap*0.5);
+% mean during - mean background for each response
+bacgr_removed=zeros(1,length(allDataPre));
+for i =1:length(allDataPre)
+    b=mean(allDataPre(i).mean_flash(1:flashParams.framesBeforeFlash,3));
+    d=mean(allDataPre(i).mean_flash(flashParams.framesBeforeFlash+1:flashParams.framesBeforeFlash+flashParams.framesDuringFlash,3));
+    bacgr_removed(i)=d-b;
+end
+bacgr_removedPost=zeros(1,length(allDataPost));
+for i =1:length(allDataPost)
+    b=mean(allDataPost(i).mean_flash(1:flashParams.framesBeforeFlash,3));
+    d=mean(allDataPost(i).mean_flash(flashParams.framesBeforeFlash+1:flashParams.framesBeforeFlash+flashParams.framesDuringFlash,3));
+    bacgr_removedPost(i)=d-b;
+end
+test.a=bacgr_removed;
+test.b=bacgr_removedPost;
+figure()
+violinplot(test,'ViolinColor',cmapContra,'EdgeColor',[0.3,0.3,0.3],'BoxColor',[0.3,0.3,0.3])
