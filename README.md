@@ -4,7 +4,7 @@ This repository contains all the code used for analyzing the data and generating
 "Pupil-induced retinal binocularity potentiates low-contrast vision". 
 
 Each folder contains the code used for a specific experiment or type of analysis described in the manuscript.\
-\
+
 
 # Requirements
 -  Matlab R2021b
