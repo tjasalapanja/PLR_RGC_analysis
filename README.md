@@ -14,5 +14,6 @@ The demo folder contains example scripts for analyzing the RGCs respoonses to a 
 -  Download example data from [here](https://console.cloud.google.com/storage/browser/plr-rgc-data) . The file contains pre-processed neural data from a single recording session.
 -  Run AnalyzeOneContrast. Be sure to change DATASET_PATH to point to the folder where you downloaed the data.
 -  Run PlotOneContrast to generate the plots.
+Additionally, PlotExampleROI wil ll plot trial-averaged response of a single RGC, as present in Fig.2 of the manuscript.
 
 
