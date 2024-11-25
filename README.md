@@ -5,10 +5,14 @@ This repository contains all the code used for analyzing the data and generating
 
 Each folder contains the code used for a specific experiment or type of analysis described in the manuscript.\
 \
-The demo folder contains an example of pre-processed neural data and scripts for analyzing the RGCs respoonses to a full-field flash stimulation. To generate the plots, run AnalyzeOneContrast.m and then PlotOneContrast.m
-
 
 # Requirements
--  Matlab R2021b 
+-  Matlab R2021b
+
+# Demo
+The demo folder contains example scripts for analyzing the RGCs respoonses to a full-field flash stimulation. To generate the plots:
+-  Download example data from - . The file contains pre-processed neural data from a single recording session.
+-  Run AnalyzeOneContrast. Be sure to change DATASET_PATH to point to the folder where you downloaed the data.
+-  Run PlotOneContrast to generate the plots.
 
 
